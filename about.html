@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Travel Website | About Us</title>
+
+    <link rel="stylesheet" type="text/css"  href="style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">   
+</head>
+<body>
+
+    <nav class="nav nav_top">
+        <div class="logo">
+            <a href="index.html"><img src="travel1.jpg" width="100"></a>
+        </div>
+        <div class="nav_side">
+            <a href="about.html">About Us</a>
+            <a href="service.html">Services</a>
+            <a href="blog.html">Blogs</a>
+            <a href="contact.html">Contact</a>
+            <a href="Signup.html">Login/Register</a>
+        </div>
+    </nav>
+
+    <div class="about_us">
+        <h2>About Us</h2>
+        <div class="about_content">
+                <p>We as a team preseent you with the best suggestions on the places to be visited in a state or city you have preferred for. We input many places that we feel must not be missed out while travelling and present you with a well structured 
+                    documentation of places,their description and location.</p>
+                <p>Our Team is the backbone of our institution and we see to it that user satisfaction always lies as our first priority. </p>
+<hr>           
+                <h2>Our Motive</h2>
+                <p>We as a team preseent you with the best suggestions on the places to be visited in a state or city you have preferred for. We input many places that we feel must not be missed out while travelling and present you with a well structured 
+                    documentation of places,their description and location.</p>
+                <p>Our Team is the backbone of our institution and we see to it that user satisfaction always lies as our first priority. </p>
+        </div>
+        
+    </div>
+
+
+    <div class="feed">
+        <h2>Write a Review:</h2>
+        <div class="feed_form">
+            <form name="submit-googlesheet" method="post">
+                <input type="text"  name="Name" placeholder="Name"><br>
+                <input type="email" name="Email" placeholder="Email ID"><br>
+                <input type="number" name="Number" placeholder="Contact Number"><br>
+                <textarea rows="5" cols="7" name="Review"placeholder="Write your Review"></textarea><br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_logo">
+            <a href="#"><img src="travel1.jpg" width="100"></a>
+        </div>
+        <div class="pages">
+            <h3>Pages</h3>
+            <a href="about.html">About Us</a>|
+            <a href="service.html">Services</a>|
+            <a href="blog.html">Blogs</a>|
+            <a href="Signup.html">Sign Up</a>
+        </div>
+        <div class="doc">
+            <h3>Documents</h3>
+            <a href="">Privacy Policy</a> |
+            <a href="">Terms of Use</a>|
+            <a href="">Refund Policy></a>
+
+        </div>
+        <div class="social">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/1Stopai-102490171820303/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/1stop-ai/?originalSubdomain=in" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/onestopai?lang=en" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>   
+        </div>
+        <div class="contact">
+            <h3>Contact us</h3>
+            <a href="https://api.Watsapp.com/send?phone:+911234567890" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="tel: +911234567890"><i class="fa fa-phone" aria-hidden="true"></i></a>
+            <a href="mailto: support@1stop.ai"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+            <a href=""></a>   
+        </div>
+        <hr>
+        <p>Copyright &copy; 2021 !stop.All rights reserved</p>
+        <div class="contact">
+            <h3>Contact Us</h3>
+            <a href=""></a>
+            <a href=""></a>
+            <a href=""></a>
+        </div>
+    </footer>
+
+
+
+ 
+<script type="text/javascript">
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwzVguU5Sm1d9LazK1a4qPB9sNfDZvNZj8KmRgL-0kzKBKufbYplpGXXovPNpehVFOP6g/exec'
+const form = document.forms['submit-googlesheet']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => alert("Thankyou! for Submitting your Review."))
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+</body>
+
+</html>
